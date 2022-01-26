@@ -2,8 +2,8 @@ import urlJoin from 'url-join';
 import template from 'url-template';
 import axios, {AxiosRequestConfig, AxiosRequestHeaders, Method} from 'axios';
 import querystring from 'query-string';
-import {pick, omit, isUndefined, last} from 'lodash';
-import {KeycloakAdminClient} from '../client';
+import {pick, omit, isUndefined, last} from 'lodash-es';
+import type {KeycloakAdminClient} from '../client.js';
 
 // constants
 const SLASH = '/';

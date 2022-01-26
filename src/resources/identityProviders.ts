@@ -1,8 +1,8 @@
-import Resource from './resource';
-import IdentityProviderRepresentation from '../defs/identityProviderRepresentation';
-import IdentityProviderMapperRepresentation from '../defs/identityProviderMapperRepresentation';
-import {IdentityProviderMapperTypeRepresentation} from '../defs/identityProviderMapperTypeRepresentation';
-import {KeycloakAdminClient} from '../client';
+import Resource from './resource.js';
+import type IdentityProviderRepresentation from '../defs/identityProviderRepresentation.js';
+import type IdentityProviderMapperRepresentation from '../defs/identityProviderMapperRepresentation.js';
+import type {IdentityProviderMapperTypeRepresentation} from '../defs/identityProviderMapperTypeRepresentation.js';
+import type {KeycloakAdminClient} from '../client.js';
 
 export class IdentityProviders extends Resource<{realm?: string}> {
   /**

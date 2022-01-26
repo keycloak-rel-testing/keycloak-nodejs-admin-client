@@ -3,13 +3,14 @@ import * as chai from 'chai';
 import {KeycloakAdminClient} from '../src/client';
 import {credentials} from './constants';
 import faker from '@faker-js/faker';
-import ClientRepresentation from '../src/defs/clientRepresentation';
-import ProtocolMapperRepresentation from '../src/defs/protocolMapperRepresentation';
-import ClientScopeRepresentation from '../src/defs/clientScopeRepresentation';
-import ScopeRepresentation from '../src/defs/scopeRepresentation';
-import ResourceRepresentation from '../src/defs/resourceRepresentation';
-import UserRepresentation from '../src/defs/userRepresentation';
-import PolicyRepresentation, {Logic} from '../src/defs/policyRepresentation';
+import type ClientRepresentation from '../src/defs/clientRepresentation.js';
+import type ProtocolMapperRepresentation from '../src/defs/protocolMapperRepresentation.js';
+import type ClientScopeRepresentation from '../src/defs/clientScopeRepresentation.js';
+import type ScopeRepresentation from '../src/defs/scopeRepresentation.js';
+import type ResourceRepresentation from '../src/defs/resourceRepresentation.js';
+import type UserRepresentation from '../src/defs/userRepresentation.js';
+import type PolicyRepresentation from '../src/defs/policyRepresentation.js';
+import type {Logic} from '../src/defs/policyRepresentation.js';
 const expect = chai.expect;
 
 describe('Clients', () => {
